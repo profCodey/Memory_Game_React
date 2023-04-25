@@ -1,18 +1,20 @@
-const arr = [2, 4, 5, 7, 5, 3, 6, 3, 7, 3, 6]
-
-const newArr = [...arr, ...arr];
-newArr.sort(()=> Math.random() - 0.5);
-console.log(newArr)
-
-
+const laa = [19, 45, 19, 53, 54]
 const cardImages = [
-  { src: "./public/img/potion-1.png" },
-  { src: "./public/img/helmet-1.png" },
-  { src: "./public/img/ring-1.png" },
-  { src: "./public/img/scroll-1.png" },
-  { src: "./public/img/shield-1.png" },
-  { src: "./public/img/sword-1.png" },
+  { src: "/img/apa1.png", matched: false },
+  { src: "/img/apa2.png", matched: false },
+  { src: "/img/apa3.png", matched: false },
+  { src: "/img/apa4.jpg", matched: false },
+  { src: "/img/apa5.jpeg", matched: false },
+  { src: "/img/apa6.png", matched: false },
 ];
 
-let g = cardImages.map(v => ({ ...v, id: Math.random()}))
-console.log(g)
+const result = cardImages.every((e) => e.matched === false);
+console.log(result)
+
+console.log(allMatched)
+
+let allMatched = cardImages.every((card) => card.matched === true);
+if (allMatched) {
+  console.log("hhheeee, all has matchend");
+}
+

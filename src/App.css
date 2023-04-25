@@ -2,6 +2,23 @@
   max-width: 860px;
   margin: 40px auto;
 }
+
+/* .heading h1{
+    color: #C39E6B;
+
+} */
+
+.btn button{
+  border: 2px solid #070000;
+  color: white;
+  background: #470360;;
+  padding: 6px 12px;
+  border-radius: 4px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  font-size: 0.7em;
+}
+
 button {
   background: none;
   border: 2px solid #fff;
@@ -13,12 +30,131 @@ button {
   font-size: 1em;
 }
 button:hover {
-  background: #c23866;
-  color: #fff;
+  background: #c68e3f;
+  color: #37007a
+}
+
+.btn button:hover {
+  background: none;
+border: 2px solid #37007a;
+  color: #37007a;;
 }
 .card-grid{
   margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px
+}
+
+.modal{
+  position: absolute; /* Stay in place */
+ /* z-index: 1;   Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100%; /* Full height */
+  /* overflow: auto; Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); 
+    transition: all ease-in 0.2s;
+      transition-delay: 0s;
+}
+
+.instruction{
+margin-top: -25px;
+font-size: 18px;
+}
+
+.modalCover{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+  /* position: relative; */
+  width: 440px;
+  height: 380px;
+  border-radius: 25px;
+  background: #fff;
+    transition: all ease-in 0.2s;
+      transition-delay: 0s;
+      padding-bottom: 20px;
+    
+}
+
+.modalCover img{
+  width: 140px;
+  margin-top: -30px;
+}
+
+.congrats{
+  font-size: 2rem;
+  color: black;
+}
+
+.modalCover p{
+  color: black;
+  font-size:1.2rem;
+  margin-top: -10px;
+}
+
+.scoreView{
+  display: flex;
+  justify-content: center;
+}
+
+.score{
+  padding-left: 10px;
+}
+
+.scoreView .score{
+    font-weight: 800;
+}
+.btm{
+  position: relative;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  width: 100%;
+}
+ .close h2{
+  color: black;
+  margin-bottom: 0;
+  padding-top: 20px;
+  font-size: 23px;
+  color: #4e0e61;
+ }
+
+ .close{
+  margin-left: 80%;
+    cursor: pointer;
+ }
+.btm p{
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  /* styles for screens */
+  .modalCover{
+  width: 80%;
+  height:fit-content;
+  padding-bottom: 20px;
+  }
+.modalCover img{
+  width: 100px;
+  margin-top: 20px;
+}
+.congrats{
+  font-size: 1.3rem;
+}
+}
+
+@media screen and (max-width: 350px) {
+  /* styles for screens */
+.congrats{
+  font-size: 1.3rem;
+}
+
+  .modalCover{
+  width: 80%;
+  }
+
 }
